@@ -1,0 +1,59 @@
+.social-proof {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+  background: var(--bg-surface);
+}
+
+.social-proof-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.sp-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.sp-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 7px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.sp-badge:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.sp-badge-icon {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .social-proof-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

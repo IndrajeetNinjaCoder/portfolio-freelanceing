@@ -65,12 +65,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
-        <div className="container footer-bottom-inner">
-          <p>© {new Date().getFullYear()} All rights reserved.</p>
-          <p>Built with React + Vite</p>
-        </div>
-      </div>
+    
     </footer>
   );
 }
